@@ -1,4 +1,202 @@
 
+1.3.18 / 2014-12-17
+===================
+
+  * Adroll: added custom data to all calls
+
+1.3.17 / 2014-12-16
+===================
+
+  * Add GitHub IP range to known_hosts to prevent Duo error
+
+1.3.16 / 2014-12-16
+===================
+
+  * Merge pull request #481 from segmentio/fix/duo-installs
+  * Add GitHub IP range to known_hosts to prevent Duo error
+
+1.3.15 / 2014-12-12
+===================
+
+  * Adroll: adding custom params
+  * Google Analytics: add custom dims and metrics to track calls
+  * Chartbeat: adding basic implementation of authors and sections
+
+1.3.14 / 2014-12-11
+===================
+
+  * Leadlander: removing integration
+  * Awesomatic: removing integration
+  * removing travisci and updating badge
+  * tweaking circle.yml
+  * Rollbar: updating to 1.1.0
+
+1.3.13 / 2014-12-04
+==================
+
+  * segment: use text/plain
+  * Styling fixes
+  * Re-adding build.js step to make test
+  * Updating tests with new linting, removing make-lint dependency
+  * Adding last bits of linting fixes
+  * Adding linting
+
+1.3.12 / 2014-11-25
+===================
+
+  * FullStory: added support for custom traits
+
+1.3.11 / 2014-11-22
+===================
+
+  * Amplitude: campaign names
+  * Perfect Audience: track fixes
+
+1.3.10 / 2014-11-21
+==================
+
+  * sentry: update raven, and use .RavenConfig global to initialize
+  * changed to use del module in fullstory
+  * fix for fullstory
+  * Remove errant logfile
+  * Update `yields/store` to 1.0.1
+  * added createdAt as a format in customerio
+
+1.3.9 / 2014-11-13
+==================
+
+  * ga: remove errant parens
+
+1.3.8 / 2014-11-11
+==================
+
+  * deps: bump utm-params
+
+1.3.7 / 2014-11-11
+==================
+
+  * GA: remove parens from campaign params
+
+1.3.6 / 2014-11-06
+==================
+
+  * Amplitude: added setDomain and setGlobalUserProperties to init
+  * Adding documentation link at initialization section
+  * Fixing space issues in bsft test.js
+  * Integration with getblueshift.com
+  * piwik: add event tracking
+
+1.3.5 / 2014-10-28
+==================
+
+ * add GA support for explicitly passed campaign params
+ * Typo, language fixes
+ * add segment
+ * deps: update duo
+
+1.3.4 / 2014-10-25
+==================
+
+  * contributing: segment.io -> segment.com
+  * Removing unnecessary temp variable
+  * update GoSquared w/ `identify` method
+
+1.3.3 / 2014-10-22
+==================
+
+  * fixed intercom to properly set createdAt to created_at
+
+1.3.2 / 2014-10-21
+==================
+
+  * saasquatch: updating tests, removing undefined
+  * uncommenting out the global referral images
+  * Adding unsubscribe capabilities to track
+  * ga: remove es5 filter use
+  * ga: add comments
+  * tests: fix mocha-phantomjs
+  * fixed fullstory integration
+  * Added Enhanced Ecommerce support to GA integration
+  * Fixed nonInteraction option in ga
+
+1.3.1 / 2014-10-17
+==================
+
+ * ga: remove es5 filter use
+ * ga: add comments
+
+1.3.0 / 2014-10-17
+==================
+
+ * Added Enhanced Ecommerce support to GA integration
+ * tests: fix mocha-phantomjs
+
+1.2.22 / 2014-10-10
+==================
+
+  * Perfect Audience: Add support for ecommerce
+  * Added fullstory
+  * Update Amplitude to v1.3
+
+1.2.21 / 2014-10-09
+==================
+
+ * Load Inspectlet's javascript from the CDN
+
+1.2.20 / 2014-10-08
+==================
+
+  * GA: add noninteraction advanced option
+
+1.2.19 / 2014-10-07
+===================
+
+  * Merge pull request #430 from segmentio/fix/comscore
+  * Fix page method comment
+  * add support for SPAs in comscore
+
+1.2.18 / 2014-10-06
+===================
+
+  * Merge pull request #426 from segmentio/fix/inspectlet
+  * Update test.js
+  * Fix test expected method
+  * add support for inspectlet page
+
+1.2.17 / 2014-10-01
+===================
+
+  * Merge pull request #424 from segmentio/keen/addons
+  * Merge pull request #414 from segmentio/insidevault/multiple-events
+  * keen: send addons on .track() too
+  * insidevault: support multiple events
+
+1.2.16 / 2014-09-26
+===================
+
+  * Merge pull request #421 from segmentio/fix/heap
+  * Changed terminology apiKey to appId
+  * Merge pull request #420 from segmentio/fix/google-analytics
+  * Fix: changed default domain to auto
+
+1.2.15 / 2014-09-22
+===================
+
+  * deps: upgrade domify to fix bing-ads on ie8
+
+1.2.14 / 2014-09-17
+===================
+
+  * errorception: update apiKey
+  * Merge pull request #418 from segmentio/fix/bugsnag
+  * bugsnag: use amd when possible
+  * Merge pull request #415 from segmentio/fix/inside-vault
+  * Merge pull request #417 from segmentio/fix/inspectlet
+  * update clear-env to support clear-ajax, which removes ajax requests in process between tests. fixes #416
+  * Fixes to IV
+  * Merge pull request #408 from chiplay/fix/keen
+  * Return cloned props for setGlobalProperties
+
 1.2.13 / 2014-09-04
 ===================
 

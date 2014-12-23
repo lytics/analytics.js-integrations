@@ -21,6 +21,24 @@ The commands you'll want to know for development are:
     $ make test          # runs all of the tests in your terminal
     $ make test-browser  # runs all of the tests in your browser, for nicer debugging
 
+## Getting Setup
+
+  To start, you need a couple of tools that will help you integrate as fast as possible:
+
+  - [Khaos](https://github.com/segmentio/khaos) (`npm i -g khaos`)
+  - [khaos-analytics.js-integration](https://github.com/segmentio/khaos-analytics.js-integration) (`khaos install segmentio/khaos-analytics.js-integration analytics.js-integration`)
+
+Once you have those tools installed, `cd` into your fork and run:
+
+  ```bash
+  $ khaos create analytics.js-integration lib/<slug>
+  ```
+
+Khaos will ask you a couple of question and create the integration skeleton for you!
+See our [tracking API](https://segment.com/docs/tracking-api/) to check what each method does.
+
+![khaos](https://dl.dropboxusercontent.com/u/8040/khaos-analytics.js-integration.png)
+
 
 ## Adding an Integration
 
@@ -54,7 +72,7 @@ var integration = require('analytics.js-integration');
 var MyIntegration = integration('My Integration');
 ```
 
-Once you have the prototype created, you just need to add any of the methods you can to add support for to the `prototype`. For example, an integration that implements `initialize` and `identify` might look like this:
+Once you have the prototype created, you just need to add any of the methods in our [Tracking API](https://segment.com/docs/api/tracking/) to the `prototype`. For example, an integration that implements `initialize` and `identify` might look like this:
 
 ```js
 var MyIntegration = integration('My Integration')
@@ -118,4 +136,4 @@ To help make contributing easy, here's all the things you need to remember:
 - Run the tests and get everything passing.
 - Commit your changes with a nice commit message.
 - Submit your pull request.
-- Add a vector logo to the pull request comments if you want it merged into [Segment.io](https://segment.io) too!
+- Add a vector logo to the pull request comments if you want it merged into [Segment](https://segment.com) too!
